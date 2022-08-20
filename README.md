@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/ehabhamdy/HousePredictionWebApp_AzurePipelines/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/ehabhamdy/HousePredictionWebApp_AzurePipelines/actions/workflows/pythonapp.yml)
+
 # Overview
 
 <TODO: complete this with an overview of your project>
