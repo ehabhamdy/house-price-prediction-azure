@@ -27,6 +27,7 @@ def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
+
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -58,10 +59,10 @@ def predict():
 
     """
     try:
-      clf = joblib.load("boston_housing_prediction.joblib")
-    except:
-      LOG.info("JSON payload: %s json_payload")
-      return "Model not loaded"
+        clf = joblib.load("boston_housing_prediction.joblib")
+    except ValueError:
+        LOG.info("JSON payload: %s json_payload")
+        return "Model not loaded"
 
     json_payload = request.json
     LOG.info("JSON payload: %s json_payload")
