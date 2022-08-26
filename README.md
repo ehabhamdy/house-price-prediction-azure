@@ -42,7 +42,7 @@ The development
 <img src="azureprediction.png" width="800">
 
 * Output of streamed log files from deployed application
-<img src="azureprediction.png" width="800">
+<img src="logs.png" width="800">
 
 
 
