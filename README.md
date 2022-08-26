@@ -1,54 +1,53 @@
 [![Python application test with Github Actions](https://github.com/ehabhamdy/HousePredictionWebApp_AzurePipelines/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/ehabhamdy/HousePredictionWebApp_AzurePipelines/actions/workflows/pythonapp.yml)
 
 # Overview
-
-<TODO: complete this with an overview of your project>
+This project is done is accordance to the udacity specifications to build a complete CI/CD for a flask based application
+that provide a inference endpoint for house price predictions based on the features of the house. The application is 
+deployed as a web app on Azure using (Azure App Services). 
 
 ## Project Plan
-<TODO: Project Plan
-
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello board for the project:
+    https://trello.com/b/5i2rmPGT/housepredictions-of-project-management-template
+* Full project plan spreadsheet:
+    https://docs.google.com/spreadsheets/d/1fb1SpfHJbU5I71yWouwonHabAM7OO0xeGj4jpk9s6sU/edit?usp=sharing
 
 ## Instructions
 
-<TODO:  
+The development
+
 * Architectural Diagram 
 <img src="architecture.png" width="800">
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
+
 * Project running on Azure App Service
+<img src="runningapp.png" width="800">
+
 
 * Project cloned into Azure Cloud Shell
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+<img src="cloudshell.png" width="800">
 
 * Output of a test run
+<img src="appservices.png" width="800">
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+<img src="appservices.png" width="800">
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+* Successful prediction from deployed flask app in Azure Cloud Shell.
+<img src="azureprediction.png" width="800">
 
 * Output of streamed log files from deployed application
+<img src="azureprediction.png" width="800">
 
-> 
+
 
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
 
-## Demo 
+## Demo
 
 <TODO: Add link Screencast on YouTube>
-
-
