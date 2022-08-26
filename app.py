@@ -40,7 +40,7 @@ def get_prediction(json_payload):
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home</h3>"
+    html = "<h3>Sklearn Prediction Home Release 2</h3>"
     return html.format(format)
 
 
