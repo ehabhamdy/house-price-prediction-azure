@@ -13,7 +13,23 @@ deployed as a web app on Azure using (Azure App Services).
 
 ## Instructions
 
-The development
+After cloning the project, you need to perform the following steps to deploy it to azure:
+1. Install azure CLI.
+2. Login to your azure account `azure login`
+3. Deploy the app to Azure App Services: 
+`az webapp create -g houseprediction-rg -p house-prediction-service-plan -n house-prediction-app --runtime PYTHON:3.9`
+4. For automatic deployment, configure azure DevOps, create a new pipeline and make sure to add a Service Connection
+to the deployed Azure App Services app.
+5. Make sure to select the pipeline configuration file from the code repository `azure-pipelines.yml`
+6. To publish a new release, you need to give your commit a tag for the azure pipeline to trigger a new deployment
+Here is an example
+`git add .`
+`git commit -m "Release 4 implementation"`
+`git tag release.4`
+`git push`
+`git `push origin release.4
+7. Once the code is pushed, Github action will trigger the necessary tests and Azure pipeline will perform
+a new deployment.
 
 * Architectural Diagram 
 <img src="architecture.png" width="800">
@@ -49,6 +65,7 @@ The development
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
+
 
 ## Demo
 
