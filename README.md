@@ -31,7 +31,9 @@ The development
 * Output of a test run
 <img src="appservices.png" width="800">
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+* Successful deploy of the project in Azure Pipelines. 
+<img src="azurepipeline.png" width="800">
+
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 <img src="appservices.png" width="800">
