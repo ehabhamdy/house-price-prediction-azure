@@ -33,12 +33,12 @@ stages:
     pool:
       name: default
     steps:
-    # - task: UsePythonVersion@0
-    #   inputs:
-    #     versionSpec: '$(pythonVersion)'
-    #     addToPath: true 
-    #     architecture: 'x64'
-    #   displayName: 'Use Python $(pythonVersion)'
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+        addToPath: true 
+        architecture: 'x64'
+      displayName: 'Use Python $(pythonVersion)'
 
     - script: |
         python -m venv antenv
