@@ -34,8 +34,8 @@ stages:
       name: default
     steps:
     - task: UsePythonVersion@0
-      # inputs:
-      #   versionSpec: '$(pythonVersion)'
+      inputs:
+        versionSpec: '$(pythonVersion)'
       displayName: 'Use Python $(pythonVersion)'
 
     - script: |
