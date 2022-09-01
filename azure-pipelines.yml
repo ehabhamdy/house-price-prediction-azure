@@ -4,24 +4,20 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-  tags:
-    include:
-      - release.*
-pr:
 - main
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '12a56e36-74b5-404f-9e54-8f8e0731fa1d'
+  azureServiceConnectionId: '292c25ff-6b98-4308-9014-b850e8228367'
 
   # Web app name
-  webAppName: 'flask-ml-service-ehab'
+  webAppName: 'house-prediction-app'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'flask-ml-service-ehab'
+  environmentName: 'house-prediction-app'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -84,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : flask-ml-service-ehab'
+            displayName: 'Deploy Azure Web App : house-prediction-app'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
