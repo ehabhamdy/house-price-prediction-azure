@@ -17,7 +17,7 @@ After cloning the project, you need to perform the following steps to deploy it 
 1. Install azure CLI.
 2. Login to your azure account `azure login`
 3. Deploy the app to Azure App Services: 
-`az webapp create -g houseprediction-rg -p house-prediction-service-plan -n house-prediction-app --runtime PYTHON:3.9`
+`az webapp up -g houseprediction-rg -p house-prediction-service-plan -n house-prediction-app -l westeurope --sku B1 --runtime PYTHON:3.9`
 4. For automatic deployment, configure azure DevOps, create a new pipeline and make sure to add a Service Connection
 to the deployed Azure App Services app.
 5. Make sure to select the pipeline configuration file from the code repository `azure-pipelines.yml`
@@ -32,40 +32,39 @@ Here is an example
 a new deployment.
 
 * Architectural Diagram 
-<img src="architecture.png" width="800">
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
+<img src="screenshots/architecture.png" width="800">
 
 * Project running on Azure App Service
-<img src="runningapp.png" width="800">
-
+<img src="screenshots/runningapp.png" width="800">
 
 * Project cloned into Azure Cloud Shell
-<img src="cloudshell.png" width="800">
+<img src="screenshots/cloudshell.png" width="800">
 
 * Output of a test run
-<img src="appservices.png" width="800">
+<img src="screenshots/appservices.png" width="800">
 
 * Successful deploy of the project in Azure Pipelines. 
-<img src="azurepipeline.png" width="800">
+<img src="screenshots/azurepipeline.png" width="800">
 
 
 * Running Azure App Service from Azure Pipelines automatic deployment
-<img src="appservices.png" width="800">
+<img src="screenshots/appservices.png" width="800">
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.
-<img src="azureprediction.png" width="800">
+<img src="screenshots/azureprediction.png" width="800">
 
 * Output of streamed log files from deployed application
-<img src="logs.png" width="800">
+<img src="screenshots/logs.png" width="800">
 
 
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
-
+From a devops engineer prespective, I would definitly consider using infrastructure as code
+such as Terraform to deploy the web app instead of the CLI. Developers should avoid working
+on the main branch and use [git flow](http://danielkummer.github.io/git-flow-cheatsheet/) 
+for better repo organziation. I would also suggest using three different environment for 
+development, staging and production.
 
 ## Demo
 
