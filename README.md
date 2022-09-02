@@ -56,7 +56,9 @@ a new deployment.
 * Output of streamed log files from deployed application
 <img src="screenshots/logs.png" width="800">
 
-
+* Load testing results
+<img src="screenshots/load2.png" width="800">
+<img src="screenshots/load1.png" width="800">
 
 ## Enhancements
 
